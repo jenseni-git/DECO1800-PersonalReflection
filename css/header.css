@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&family=Ubuntu&display=swap");
+
+:root {
+	--main-bg-color: #cdd6dd;
+	--main-black: #222c30;
+	--main-accent-color: #ccfbfe;
+	--main-accent-color-dull: rgba(204, 251, 254, 0.7);
+	--feature-accent-color: #cdaca1;
+	--main-red: #f3899b;
+
+	--header-font-family: "Raleway", sans-serif;
+	--main-font-family: "Ubuntu", sans-serif;
+
+	--header-font-weight: 600;
+	--font-weight-normal: 500;
+	--font-weight-skinny: 300;
+}
+
+body {
+	margin: 0;
+	background-color: var(--main-bg-color);
+	user-select: none;
+	font-family: var(--main-font-family);
+	color: var(--main-black);
+}
+
+p {
+	user-select: text;
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-black);
+}
+
+header {
+	height: 70px;
+	background-color: var(--main-accent-color);
+	display: flex;
+	align-items: center;
+	font-family: var(--header-font-family);
+	font-size: larger;
+	font-weight: var(--header-font-weight);
+	width: 100%;
+	z-index: 50;
+	text-align: center;
+}
+
+#headerContent {
+	width: 70%;
+	margin: auto;
+	max-width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#headerContent > div > a:hover {
+	font-weight: var(--font-weight-normal);
+	cursor: pointer;
+}
+
+#headerContent > * {
+	padding: 4px 16px;
+}
+
+#headerLinks {
+	display: flex;
+	justify-content: space-around;
+}
+
+#headerLinks > * {
+	padding: 10px 16px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	font-weight: var(--font-weight-normal);
+}
+
+.dropdown-content a {
+	padding: 12px 16px;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.dropdown-content :not(:last-child) {
+	border-bottom: black solid 1px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	background-color: var(--main-accent-color);
+	box-shadow: 3px 5px 5px rgba(10, 10, 10, 70%);
+}
+
+.dropdown:hover {
+	box-shadow: 3px 5px 5px rgba(10, 10, 10, 70%);
+}
+
+.dropdown > a:hover {
+	font-weight: var(--font-weight-normal);
+}
+
+#indexContent {
+	margin: 0 10px;
+}
+
+.references > p {
+	text-indent: -50px;
+	margin-left: 50px;
+}
+
+.references a {
+    text-decoration: underline;
+}
